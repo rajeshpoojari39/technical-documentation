@@ -1,0 +1,108 @@
+html {
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: black;
+  font-size: 1.8em;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#navbar {
+  flex: 0.22;
+  border-right: 3px solid rgb(179, 179, 179);
+  position: fixed;
+  width: 300px;
+  height: 100%;
+}
+
+#navbar header {
+  margin: 15px;
+  text-align: center;
+}
+
+#navbar ul {
+  padding: 0;
+  height: 88%;
+  overflow-y: scroll;
+}
+
+#navbar li {
+  list-style: none;
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li:last-child {
+  border-bottom: 1px solid black;
+}
+
+#navbar a {
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+}
+
+#main-doc {
+  flex: 0.78;
+  margin: 25px;
+  position: absolute;
+  margin-left: 350px;
+}
+
+#main-doc p {
+  margin-left: 20px;
+}
+
+#main-doc ul {
+  margin-left: 30px;
+}
+
+#main-doc li {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  line-height: 2;
+}
+
+@media (max-width: 820px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 250px;
+    width: 100%;
+    border-right: none;
+  }
+
+  #navbar ul {
+    border: 1px solid black;
+    height: 207px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin: 300px 20px 10px 20px;
+    width: 90%;
+  }
+}
